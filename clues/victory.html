@@ -1,0 +1,209 @@
+<!-- clues/victory.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Complete!</title>
+    <style>
+        body { 
+            background: #000000;
+            color: #ffffff; 
+            font-family: 'Courier New', monospace; 
+            margin: 0; 
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .victory { 
+            text-align: center; 
+            max-width: 700px;
+            border: 2px solid #ffffff;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        h1 { 
+            color: #ffffff; 
+            font-size: 3em; 
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px #ffffff;
+        }
+        .team-info {
+            font-size: 1.5em;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .time-display {
+            font-size: 2em;
+            margin: 25px 0;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .ranking {
+            font-size: 1.8em;
+            margin: 25px 0;
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700;
+        }
+        .teammates {
+            font-size: 1.2em;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #888888;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .teammate {
+            margin: 5px 0;
+        }
+        .drink {
+            font-size: 1.8em;
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+        }
+        .birthday {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #ff69b4;
+            text-shadow: 0 0 8px #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="victory">
+        <h1>🏆 QUEST COMPLETE! 🏆</h1>
+        
+        <div class="team-info" id="teamDisplay">
+            Loading team info...
+        </div>
+        
+        <div class="time-display" id="timeDisplay">
+            ⏱️ Loading time... ⏱️
+        </div>
+        
+        <div class="ranking" id="rankingDisplay">
+            📊 Calculating ranking... 📊
+        </div>
+        
+        <div class="teammates" id="teammatesDisplay">
+            👥 Loading teammates... 👥
+        </div>
+        
+        <div class="drink">
+            🍻 Grab a drink! 🍻
+        </div>
+
+    <script src="../logic.js"></script>
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const teamParam = urlParams.get('team');
+        const timeParam = urlParams.get('time');
+        const rankParam = urlParams.get('rank');
+        
+        // Team data
+        const teamData = {
+            "Flames": {
+                icon: "🔥",
+                members: ["Anna T", "Carlo (C)", "Ella L", "George BP", "Harry V", "Michael K"]
+            },
+            "Oracle": {
+                icon: "🔮",
+                members: ["Annie", "Flinn", "Guy B (C)", "Helena N", "Sakshi", "Defne"]
+            },
+            "Harvest": {
+                icon: "🌿",
+                members: ["Abbe McC", "Arnaud", "Lauren G", "Maggie H", "Miles D (C)", "Tom T"]
+            },
+            "Athena": {
+                icon: "🦉",
+                members: ["Amanda", "Amy G", "Darcy N", "Harry R", "Paul A (C)", "Hannah R"]
+            },
+            "Atlas": {
+                icon: "🗺️",
+                members: ["Bea I (C)", "Blake E", "Christine", "Jake", "Remi", "Tom M"]
+            },
+            "Cosmos": {
+                icon: "⭐",
+                members: ["Matt S", "Alex A (C)", "Lois D", "Lydia P", "Nick B", "Sophie N"]
+            }
+        };
+        
+        function displayResults() {
+            const team = teamParam || 'Unknown Team';
+            const timeMs = timeParam ? parseInt(timeParam) : null;
+            const rank = rankParam ? parseInt(rankParam) : null;
+            
+            // Display team
+            const teamDisplay = document.getElementById('teamDisplay');
+            if (teamData[team]) {
+                teamDisplay.innerHTML = `${teamData[team].icon} Team ${team} ${teamData[team].icon}`;
+            } else {
+                teamDisplay.innerHTML = `🎯 Team ${team} 🎯`;
+            }
+            
+            // Display time
+            const timeDisplay = document.getElementById('timeDisplay');
+            if (timeMs) {
+                const formattedTime = formatTime(timeMs);
+                timeDisplay.innerHTML = `⏱️ Your Time: ${formattedTime} ⏱️`;
+            } else {
+                timeDisplay.innerHTML = `⏱️ Time: Complete! ⏱️`;
+            }
+            
+            // Display ranking
+            const rankingDisplay = document.getElementById('rankingDisplay');
+            if (rank) {
+                let medal = '';
+                if (rank === 1) medal = '🥇';
+                else if (rank === 2) medal = '🥈';
+                else if (rank === 3) medal = '🥉';
+                else medal = '🏆';
+                
+                rankingDisplay.innerHTML = `${medal} Rank: #${rank} ${medal}`;
+            } else {
+                rankingDisplay.innerHTML = `🏆 Finished! 🏆`;
+            }
+            
+            // Display teammates
+            const teammatesDisplay = document.getElementById('teammatesDisplay');
+            if (teamData[team]) {
+                const membersList = teamData[team].members.map(member => 
+                    `<div class="teammate">${member}</div>`
+                ).join('');
+                teammatesDisplay.innerHTML = `<strong>Your Team:</strong>${membersList}`;
+            } else {
+                teammatesDisplay.innerHTML = `<strong>Your Team:</strong><div class="teammate">Team members</div>`;
+            }
+        }
+        
+        function formatTime(milliseconds) {
+            const totalMinutes = Math.floor(milliseconds / 60000);
+            const seconds = Math.floor((milliseconds % 60000) / 1000);
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+            
+            if (hours > 0) {
+                return `${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                return `${minutes}m ${seconds}s`;
+            }
+        }
+        
+        // Display results when page loads
+        displayResults();
+    </script>
+</body>
+</html>
