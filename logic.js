@@ -3,78 +3,78 @@ const treasureHuntData = {
         "Flames": {
             passcode: "PHOENIX",
             path: [
-                { location: "CHILTERN", nextClue: "clues/gunmakers.html" },
-                { location: "GUNMAKERS", nextClue: "clues/wimpole.html" },
-                { location: "WIMPOLE", nextClue: "clues/garden.html" },
-                { location: "GARDEN", nextClue: "clues/daunt.html" },
-                { location: "DAUNT", nextClue: "clues/wallace.html" },
-                { location: "WALLACE", nextClue: "clues/jackalope-clue.html" }
+                { location: "CHILTERN", nextClue: "clues/forge.html" },
+                { location: "GUNMAKERS", nextClue: "clues/nexus.html" },
+                { location: "WIMPOLE", nextClue: "clues/gateway.html" },
+                { location: "GARDEN", nextClue: "clues/atlas.html" },
+                { location: "DAUNT", nextClue: "clues/wisdom.html" },
+                { location: "WALLACE", nextClue: "clues/sanctuary.html" }
             ]
         },
         "Oracle": {
             passcode: "ORACLE",
             path: [
-                { location: "KINGS", nextClue: "clues/waitrose.html" },
-                { location: "WAITROSE", nextClue: "clues/chiltern.html" },
-                { location: "CHILTERN", nextClue: "clues/wimpole.html" },
-                { location: "WIMPOLE", nextClue: "clues/wallace.html" },
-                { location: "WALLACE", nextClue: "clues/garden.html" },
-                { location: "GARDEN", nextClue: "clues/jackalope-clue.html" }
+                { location: "KINGS", nextClue: "clues/harvest.html" },
+                { location: "WAITROSE", nextClue: "clues/phoenix.html" },
+                { location: "CHILTERN", nextClue: "clues/nexus.html" },
+                { location: "WIMPOLE", nextClue: "clues/wisdom.html" },
+                { location: "WALLACE", nextClue: "clues/gateway.html" },
+                { location: "GARDEN", nextClue: "clues/sanctuary.html" }
             ]
         },
         "Harvest": {
             passcode: "HARVEST",
             path: [
-                { location: "WAITROSE", nextClue: "clues/garden.html" },
-                { location: "GARDEN", nextClue: "clues/kings.html" },
-                { location: "KINGS", nextClue: "clues/daunt.html" },
-                { location: "DAUNT", nextClue: "clues/gunmakers.html" },
-                { location: "GUNMAKERS", nextClue: "clues/chiltern.html" },
-                { location: "CHILTERN", nextClue: "clues/jackalope-clue.html" }
+                { location: "WAITROSE", nextClue: "clues/gateway.html" },
+                { location: "GARDEN", nextClue: "clues/crown.html" },
+                { location: "KINGS", nextClue: "clues/atlas.html" },
+                { location: "DAUNT", nextClue: "clues/forge.html" },
+                { location: "GUNMAKERS", nextClue: "clues/phoenix.html" },
+                { location: "CHILTERN", nextClue: "clues/sanctuary.html" }
             ]
         },
         "Athena": {
             passcode: "WISDOM",
             path: [
-                { location: "WALLACE", nextClue: "clues/wimpole.html" },
-                { location: "WIMPOLE", nextClue: "clues/gunmakers.html" },
-                { location: "GUNMAKERS", nextClue: "clues/kings.html" },
-                { location: "KINGS", nextClue: "clues/chiltern.html" },
-                { location: "CHILTERN", nextClue: "clues/waitrose.html" },
-                { location: "WAITROSE", nextClue: "clues/jackalope-clue.html" }
+                { location: "WALLACE", nextClue: "clues/nexus.html" },
+                { location: "WIMPOLE", nextClue: "clues/forge.html" },
+                { location: "GUNMAKERS", nextClue: "clues/crown.html" },
+                { location: "KINGS", nextClue: "clues/phoenix.html" },
+                { location: "CHILTERN", nextClue: "clues/harvest.html" },
+                { location: "WAITROSE", nextClue: "clues/sanctuary.html" }
             ]
         },
         "Atlas": {
             passcode: "ATLAS",
             path: [
-                { location: "DAUNT", nextClue: "clues/chiltern.html" },
-                { location: "CHILTERN", nextClue: "clues/wallace.html" },
-                { location: "WALLACE", nextClue: "clues/waitrose.html" },
-                { location: "WAITROSE", nextClue: "clues/kings.html" },
-                { location: "KINGS", nextClue: "clues/wimpole.html" },
-                { location: "WIMPOLE", nextClue: "clues/jackalope-clue.html" }
+                { location: "DAUNT", nextClue: "clues/phoenix.html" },
+                { location: "CHILTERN", nextClue: "clues/wisdom.html" },
+                { location: "WALLACE", nextClue: "clues/harvest.html" },
+                { location: "WAITROSE", nextClue: "clues/crown.html" },
+                { location: "KINGS", nextClue: "clues/nexus.html" },
+                { location: "WIMPOLE", nextClue: "clues/sanctuary.html" }
             ]
         },
         "Cosmos": {
             passcode: "COSMIC",
             path: [
-                { location: "WIMPOLE", nextClue: "clues/daunt.html" },
-                { location: "DAUNT", nextClue: "clues/waitrose.html" },
-                { location: "WAITROSE", nextClue: "clues/gunmakers.html" },
-                { location: "GUNMAKERS", nextClue: "clues/garden.html" },
-                { location: "GARDEN", nextClue: "clues/kings.html" },
-                { location: "KINGS", nextClue: "clues/jackalope-clue.html" }
+                { location: "WIMPOLE", nextClue: "clues/atlas.html" },
+                { location: "DAUNT", nextClue: "clues/harvest.html" },
+                { location: "WAITROSE", nextClue: "clues/forge.html" },
+                { location: "GUNMAKERS", nextClue: "clues/gateway.html" },
+                { location: "GARDEN", nextClue: "clues/crown.html" },
+                { location: "KINGS", nextClue: "clues/sanctuary.html" }
             ]
         }
     },
     
     startingLocation: {
-        "PHOENIX": { teamName: "Flames", firstClue: "clues/chiltern.html" },
-        "ORACLE": { teamName: "Oracle", firstClue: "clues/kings.html" },
-        "HARVEST": { teamName: "Harvest", firstClue: "clues/waitrose.html" },
-        "WISDOM": { teamName: "Athena", firstClue: "clues/wallace.html" },
-        "ATLAS": { teamName: "Atlas", firstClue: "clues/daunt.html" },
-        "COSMIC": { teamName: "Cosmos", firstClue: "clues/wimpole.html" }
+        "PHOENIX": { teamName: "Flames", firstClue: "clues/phoenix.html" },
+        "ORACLE": { teamName: "Oracle", firstClue: "clues/crown.html" },
+        "HARVEST": { teamName: "Harvest", firstClue: "clues/harvest.html" },
+        "WISDOM": { teamName: "Athena", firstClue: "clues/wisdom.html" },
+        "ATLAS": { teamName: "Atlas", firstClue: "clues/atlas.html" },
+        "COSMIC": { teamName: "Cosmos", firstClue: "clues/nexus.html" }
     },
     
     finalLocation: {
@@ -112,7 +112,6 @@ function validateTeamAccess(location, passcode) {
         const team = treasureHuntData.teams[teamName];
         
         if (team.passcode === passcode) {
-            // Find this location in the team's path
             const locationStep = team.path.find(step => step.location === location);
             
             if (locationStep) {
