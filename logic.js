@@ -69,12 +69,12 @@ const treasureHuntData = {
     },
     
     startingLocation: {
-        "PHOENIX": { teamName: "Phoenix Order", firstClue: "clues/gunmakers.html" },
-        "ORACLE": { teamName: "Oracle's Chosen", firstClue: "clues/waitrose.html" },
-        "HARVEST": { teamName: "Harvest Guardians", firstClue: "clues/garden.html" },
-        "WISDOM": { teamName: "Wisdom Seekers", firstClue: "clues/wimpole.html" },
-        "ATLAS": { teamName: "Cartographer's Guild", firstClue: "clues/chiltern.html" },
-        "COSMIC": { teamName: "Numerology Circle", firstClue: "clues/daunt.html" }
+        "PHOENIX": { teamName: "Phoenix Order", firstClue: "clues/chiltern.html" },
+        "ORACLE": { teamName: "Oracle's Chosen", firstClue: "clues/kings.html" },
+        "HARVEST": { teamName: "Harvest Guardians", firstClue: "clues/waitrose.html" },
+        "WISDOM": { teamName: "Wisdom Seekers", firstClue: "clues/wallace.html" },
+        "ATLAS": { teamName: "Cartographer's Guild", firstClue: "clues/daunt.html" },
+        "COSMIC": { teamName: "Numerology Circle", firstClue: "clues/wimpole.html" }
     },
     
     finalLocation: {
