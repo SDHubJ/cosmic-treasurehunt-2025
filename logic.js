@@ -8,7 +8,7 @@ const treasureHuntData = {
                 { location: "WIMPOLE", nextClue: "clues/garden.html" },
                 { location: "GARDEN", nextClue: "clues/daunt.html" },
                 { location: "DAUNT", nextClue: "clues/wallace.html" },
-                { location: "WALLACE", nextClue: "clues/jackalope.html" }
+                { location: "WALLACE", nextClue: "clues/jackalope-clue.html" }
             ]
         },
         "Oracle": {
@@ -19,7 +19,7 @@ const treasureHuntData = {
                 { location: "CHILTERN", nextClue: "clues/wimpole.html" },
                 { location: "WIMPOLE", nextClue: "clues/wallace.html" },
                 { location: "WALLACE", nextClue: "clues/garden.html" },
-                { location: "GARDEN", nextClue: "clues/jackalope.html" }
+                { location: "GARDEN", nextClue: "clues/jackalope-clue.html" }
             ]
         },
         "Harvest": {
@@ -30,7 +30,7 @@ const treasureHuntData = {
                 { location: "KINGS", nextClue: "clues/daunt.html" },
                 { location: "DAUNT", nextClue: "clues/gunmakers.html" },
                 { location: "GUNMAKERS", nextClue: "clues/chiltern.html" },
-                { location: "CHILTERN", nextClue: "clues/jackalope.html" }
+                { location: "CHILTERN", nextClue: "clues/jackalope-clue.html" }
             ]
         },
         "Athena": {
@@ -41,7 +41,7 @@ const treasureHuntData = {
                 { location: "GUNMAKERS", nextClue: "clues/kings.html" },
                 { location: "KINGS", nextClue: "clues/chiltern.html" },
                 { location: "CHILTERN", nextClue: "clues/waitrose.html" },
-                { location: "WAITROSE", nextClue: "clues/jackalope.html" }
+                { location: "WAITROSE", nextClue: "clues/jackalope-clue.html" }
             ]
         },
         "Atlas": {
@@ -52,7 +52,7 @@ const treasureHuntData = {
                 { location: "WALLACE", nextClue: "clues/waitrose.html" },
                 { location: "WAITROSE", nextClue: "clues/kings.html" },
                 { location: "KINGS", nextClue: "clues/wimpole.html" },
-                { location: "WIMPOLE", nextClue: "clues/jackalope.html" }
+                { location: "WIMPOLE", nextClue: "clues/jackalope-clue.html" }
             ]
         },
         "Cosmos": {
@@ -63,7 +63,7 @@ const treasureHuntData = {
                 { location: "WAITROSE", nextClue: "clues/gunmakers.html" },
                 { location: "GUNMAKERS", nextClue: "clues/garden.html" },
                 { location: "GARDEN", nextClue: "clues/kings.html" },
-                { location: "KINGS", nextClue: "clues/jackalope.html" }
+                { location: "KINGS", nextClue: "clues/jackalope-clue.html" }
             ]
         }
     },
