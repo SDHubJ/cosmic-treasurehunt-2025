@@ -2,85 +2,79 @@ const treasureHuntData = {
     teams: {
         "Phoenix Order": {
             passcode: "PHOENIX",
-            currentStage: 1,
             path: [
-                { location: "CHILTERN", clueUrl: "clues/chiltern.html" },
-                { location: "GUNMAKERS", clueUrl: "clues/gunmakers.html" },
-                { location: "WIMPOLE", clueUrl: "clues/wimpole.html" },
-                { location: "GARDEN", clueUrl: "clues/garden.html" },
-                { location: "DAUNT", clueUrl: "clues/daunt.html" },
-                { location: "WALLACE", clueUrl: "clues/wallace.html" }
+                { location: "CHILTERN", nextClue: "clues/gunmakers.html" },
+                { location: "GUNMAKERS", nextClue: "clues/wimpole.html" },
+                { location: "WIMPOLE", nextClue: "clues/garden.html" },
+                { location: "GARDEN", nextClue: "clues/daunt.html" },
+                { location: "DAUNT", nextClue: "clues/wallace.html" },
+                { location: "WALLACE", nextClue: "clues/jackalope.html" }
             ]
         },
         "Oracle's Chosen": {
             passcode: "ORACLE",
-            currentStage: 1,
             path: [
-                { location: "KINGS", clueUrl: "clues/kings.html" },
-                { location: "WAITROSE", clueUrl: "clues/waitrose.html" },
-                { location: "CHILTERN", clueUrl: "clues/chiltern.html" },
-                { location: "WIMPOLE", clueUrl: "clues/wimpole.html" },
-                { location: "WALLACE", clueUrl: "clues/wallace.html" },
-                { location: "GARDEN", clueUrl: "clues/garden.html" }
+                { location: "KINGS", nextClue: "clues/waitrose.html" },
+                { location: "WAITROSE", nextClue: "clues/chiltern.html" },
+                { location: "CHILTERN", nextClue: "clues/wimpole.html" },
+                { location: "WIMPOLE", nextClue: "clues/wallace.html" },
+                { location: "WALLACE", nextClue: "clues/garden.html" },
+                { location: "GARDEN", nextClue: "clues/jackalope.html" }
             ]
         },
         "Harvest Guardians": {
             passcode: "HARVEST",
-            currentStage: 1,
             path: [
-                { location: "WAITROSE", clueUrl: "clues/waitrose.html" },
-                { location: "GARDEN", clueUrl: "clues/garden.html" },
-                { location: "KINGS", clueUrl: "clues/kings.html" },
-                { location: "DAUNT", clueUrl: "clues/daunt.html" },
-                { location: "GUNMAKERS", clueUrl: "clues/gunmakers.html" },
-                { location: "CHILTERN", clueUrl: "clues/chiltern.html" }
+                { location: "WAITROSE", nextClue: "clues/garden.html" },
+                { location: "GARDEN", nextClue: "clues/kings.html" },
+                { location: "KINGS", nextClue: "clues/daunt.html" },
+                { location: "DAUNT", nextClue: "clues/gunmakers.html" },
+                { location: "GUNMAKERS", nextClue: "clues/chiltern.html" },
+                { location: "CHILTERN", nextClue: "clues/jackalope.html" }
             ]
         },
         "Wisdom Seekers": {
             passcode: "WISDOM",
-            currentStage: 1,
             path: [
-                { location: "WALLACE", clueUrl: "clues/wallace.html" },
-                { location: "WIMPOLE", clueUrl: "clues/wimpole.html" },
-                { location: "GUNMAKERS", clueUrl: "clues/gunmakers.html" },
-                { location: "KINGS", clueUrl: "clues/kings.html" },
-                { location: "CHILTERN", clueUrl: "clues/chiltern.html" },
-                { location: "WAITROSE", clueUrl: "clues/waitrose.html" }
+                { location: "WALLACE", nextClue: "clues/wimpole.html" },
+                { location: "WIMPOLE", nextClue: "clues/gunmakers.html" },
+                { location: "GUNMAKERS", nextClue: "clues/kings.html" },
+                { location: "KINGS", nextClue: "clues/chiltern.html" },
+                { location: "CHILTERN", nextClue: "clues/waitrose.html" },
+                { location: "WAITROSE", nextClue: "clues/jackalope.html" }
             ]
         },
         "Cartographer's Guild": {
             passcode: "ATLAS",
-            currentStage: 1,
             path: [
-                { location: "DAUNT", clueUrl: "clues/daunt.html" },
-                { location: "CHILTERN", clueUrl: "clues/chiltern.html" },
-                { location: "WALLACE", clueUrl: "clues/wallace.html" },
-                { location: "WAITROSE", clueUrl: "clues/waitrose.html" },
-                { location: "KINGS", clueUrl: "clues/kings.html" },
-                { location: "WIMPOLE", clueUrl: "clues/wimpole.html" }
+                { location: "DAUNT", nextClue: "clues/chiltern.html" },
+                { location: "CHILTERN", nextClue: "clues/wallace.html" },
+                { location: "WALLACE", nextClue: "clues/waitrose.html" },
+                { location: "WAITROSE", nextClue: "clues/kings.html" },
+                { location: "KINGS", nextClue: "clues/wimpole.html" },
+                { location: "WIMPOLE", nextClue: "clues/jackalope.html" }
             ]
         },
         "Numerology Circle": {
             passcode: "COSMIC",
-            currentStage: 1,
             path: [
-                { location: "WIMPOLE", clueUrl: "clues/wimpole.html" },
-                { location: "DAUNT", clueUrl: "clues/daunt.html" },
-                { location: "WAITROSE", clueUrl: "clues/waitrose.html" },
-                { location: "GUNMAKERS", clueUrl: "clues/gunmakers.html" },
-                { location: "GARDEN", clueUrl: "clues/garden.html" },
-                { location: "KINGS", clueUrl: "clues/kings.html" }
+                { location: "WIMPOLE", nextClue: "clues/daunt.html" },
+                { location: "DAUNT", nextClue: "clues/waitrose.html" },
+                { location: "WAITROSE", nextClue: "clues/gunmakers.html" },
+                { location: "GUNMAKERS", nextClue: "clues/garden.html" },
+                { location: "GARDEN", nextClue: "clues/kings.html" },
+                { location: "KINGS", nextClue: "clues/jackalope.html" }
             ]
         }
     },
     
     startingLocation: {
-        "PHOENIX": { teamName: "Phoenix Order", firstClue: "clues/chiltern.html" },
-        "ORACLE": { teamName: "Oracle's Chosen", firstClue: "clues/kings.html" },
-        "HARVEST": { teamName: "Harvest Guardians", firstClue: "clues/waitrose.html" },
-        "WISDOM": { teamName: "Wisdom Seekers", firstClue: "clues/wallace.html" },
-        "ATLAS": { teamName: "Cartographer's Guild", firstClue: "clues/daunt.html" },
-        "COSMIC": { teamName: "Numerology Circle", firstClue: "clues/wimpole.html" }
+        "PHOENIX": { teamName: "Phoenix Order", firstClue: "clues/gunmakers.html" },
+        "ORACLE": { teamName: "Oracle's Chosen", firstClue: "clues/waitrose.html" },
+        "HARVEST": { teamName: "Harvest Guardians", firstClue: "clues/garden.html" },
+        "WISDOM": { teamName: "Wisdom Seekers", firstClue: "clues/wimpole.html" },
+        "ATLAS": { teamName: "Cartographer's Guild", firstClue: "clues/chiltern.html" },
+        "COSMIC": { teamName: "Numerology Circle", firstClue: "clues/daunt.html" }
     },
     
     finalLocation: {
@@ -113,19 +107,19 @@ function validateTeamAccess(location, passcode) {
         };
     }
 
-    // Check if any team with this passcode is supposed to visit this location
+    // Find team by passcode and check if they should be at this location
     for (const teamName in treasureHuntData.teams) {
         const team = treasureHuntData.teams[teamName];
         
         if (team.passcode === passcode) {
-            // Check if this team visits this location at ANY point in their path
-            const locationInPath = team.path.find(step => step.location === location);
+            // Find this location in the team's path
+            const locationStep = team.path.find(step => step.location === location);
             
-            if (locationInPath) {
+            if (locationStep) {
                 return {
                     success: true,
                     teamName: teamName,
-                    clueUrl: locationInPath.clueUrl
+                    clueUrl: locationStep.nextClue
                 };
             }
         }
