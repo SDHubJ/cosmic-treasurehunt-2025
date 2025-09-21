@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Bday Treasure Hunt - Teams</title>
+    <style>
+        body { 
+            background: #000000;
+            color: #ffffff; 
+            font-family: 'Courier New', monospace; 
+            margin: 0; 
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid #ffffff;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        h1 { 
+            color: #ffffff; 
+            font-size: 2.5em; 
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #ffffff;
+        }
+        .event-details {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .team {
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .team-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff;
+        }
+        .team-passcode {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #888888;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .team-members {
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        .member {
+            margin-bottom: 3px;
+        }
+        .captain {
+            font-weight: bold;
+        }
+        .instructions {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 40px 0;
+            padding: 25px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .qr-instruction {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+            text-shadow: 0 0 8px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 THE CHRONICLES OF MARYLEBONE 🏆</h1>
+        
+        <div class="event-details">
+            📍 <strong>Paddington Gardens, Marylebone</strong><br>
+            📅 <strong>Saturday, October 4th</strong><br>
+            🕐 <strong>2:00 PM</strong>
+        </div>
+
+        <div class="teams-grid">
+            <div class="team">
+                <div class="team-name">🔥 FLAMES 🔥</div>
+                <div class="team-members">
+                    <div class="member">Anna T</div>
+                    <div class="member captain">Carlo (C)</div>
+                    <div class="member">Ella L</div>
+                    <div class="member">George BP</div>
+                    <div class="member">Harry V</div>
+                    <div class="member">Michael K</div>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-name">🔮 ORACLE 🔮</div>
+                <div class="team-members">
+                    <div class="member">Annie</div>
+                    <div class="member">Flinn</div>
+                    <div class="member captain">Guy B (C)</div>
+                    <div class="member">Helena N</div>
+                    <div class="member">Sakshi</div>
+                    <div class="member">Defne</div>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-name">🌿 HARVEST 🌿</div>
+                <div class="team-members">
+                    <div class="member">Abbe McC</div>
+                    <div class="member">Arnaud</div>
+                    <div class="member">Lauren G</div>
+                    <div class="member">Maggie H</div>
+                    <div class="member captain">Miles D (C)</div>
+                    <div class="member">Tom T</div>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-name">🦉 ATHENA 🦉</div>
+                <div class="team-members">
+                    <div class="member">Amanda</div>
+                    <div class="member">Amy G</div>
+                    <div class="member">Darcy N</div>
+                    <div class="member">Harry R</div>
+                    <div class="member captain">Paul A (C)</div>
+                    <div class="member">Hannah R</div>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-name">🗺️ ATLAS 🗺️</div>
+                <div class="team-members">
+                    <div class="member captain">Bea I (C)</div>
+                    <div class="member">Blake E</div>
+                    <div class="member">Christine</div>
+                    <div class="member">Jake</div>
+                    <div class="member">Remi</div>
+                    <div class="member">Tom M</div>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="team-name">⭐ COSMOS ⭐</div>
+                <div class="team-members">
+                    <div class="member">Matt S</div>
+                    <div class="member captain">Alex A (C)</div>
+                    <div class="member">Lois D</div>
+                    <div class="member">Lydia P</div>
+                    <div class="member">Nick B</div>
+                    <div class="member">Sophie N</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
