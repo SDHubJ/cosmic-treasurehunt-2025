@@ -1,6 +1,6 @@
 const treasureHuntData = {
     teams: {
-        "Phoenix Order": {
+        "Flames": {
             passcode: "PHOENIX",
             path: [
                 { location: "CHILTERN", nextClue: "clues/gunmakers.html" },
@@ -11,7 +11,7 @@ const treasureHuntData = {
                 { location: "WALLACE", nextClue: "clues/jackalope.html" }
             ]
         },
-        "Oracle's Chosen": {
+        "Oracle": {
             passcode: "ORACLE",
             path: [
                 { location: "KINGS", nextClue: "clues/waitrose.html" },
@@ -22,7 +22,7 @@ const treasureHuntData = {
                 { location: "GARDEN", nextClue: "clues/jackalope.html" }
             ]
         },
-        "Harvest Guardians": {
+        "Harvest": {
             passcode: "HARVEST",
             path: [
                 { location: "WAITROSE", nextClue: "clues/garden.html" },
@@ -33,7 +33,7 @@ const treasureHuntData = {
                 { location: "CHILTERN", nextClue: "clues/jackalope.html" }
             ]
         },
-        "Wisdom Seekers": {
+        "Athena": {
             passcode: "WISDOM",
             path: [
                 { location: "WALLACE", nextClue: "clues/wimpole.html" },
@@ -44,7 +44,7 @@ const treasureHuntData = {
                 { location: "WAITROSE", nextClue: "clues/jackalope.html" }
             ]
         },
-        "Cartographer's Guild": {
+        "Atlas": {
             passcode: "ATLAS",
             path: [
                 { location: "DAUNT", nextClue: "clues/chiltern.html" },
@@ -55,7 +55,7 @@ const treasureHuntData = {
                 { location: "WIMPOLE", nextClue: "clues/jackalope.html" }
             ]
         },
-        "Numerology Circle": {
+        "Cosmos": {
             passcode: "COSMIC",
             path: [
                 { location: "WIMPOLE", nextClue: "clues/daunt.html" },
@@ -69,12 +69,12 @@ const treasureHuntData = {
     },
     
     startingLocation: {
-        "PHOENIX": { teamName: "Phoenix Order", firstClue: "clues/chiltern.html" },
-        "ORACLE": { teamName: "Oracle's Chosen", firstClue: "clues/kings.html" },
-        "HARVEST": { teamName: "Harvest Guardians", firstClue: "clues/waitrose.html" },
-        "WISDOM": { teamName: "Wisdom Seekers", firstClue: "clues/wallace.html" },
-        "ATLAS": { teamName: "Cartographer's Guild", firstClue: "clues/daunt.html" },
-        "COSMIC": { teamName: "Numerology Circle", firstClue: "clues/wimpole.html" }
+        "PHOENIX": { teamName: "Flames", firstClue: "clues/chiltern.html" },
+        "ORACLE": { teamName: "Oracle", firstClue: "clues/kings.html" },
+        "HARVEST": { teamName: "Harvest", firstClue: "clues/waitrose.html" },
+        "WISDOM": { teamName: "Athena", firstClue: "clues/wallace.html" },
+        "ATLAS": { teamName: "Atlas", firstClue: "clues/daunt.html" },
+        "COSMIC": { teamName: "Cosmos", firstClue: "clues/wimpole.html" }
     },
     
     finalLocation: {
