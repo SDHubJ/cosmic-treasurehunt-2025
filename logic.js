@@ -91,6 +91,7 @@ const treasureHuntData = {
 };
 
 function validateTeamAccess(location, passcode) {
+    // Handle starting location
     if (location === "START") {
         const startData = treasureHuntData.startingLocation[passcode];
         if (startData) {
@@ -103,6 +104,7 @@ function validateTeamAccess(location, passcode) {
         return { success: false };
     }
     
+    // Handle final location - everyone can access with SANCTUARY
     if (location === "JACKALOPE" && passcode === "SANCTUARY") {
         return {
             success: true,
@@ -111,17 +113,19 @@ function validateTeamAccess(location, passcode) {
         };
     }
 
+    // Check if any team with this passcode is supposed to visit this location
     for (const teamName in treasureHuntData.teams) {
         const team = treasureHuntData.teams[teamName];
         
         if (team.passcode === passcode) {
-            const currentClue = team.path[team.currentStage - 1];
+            // Check if this team visits this location at ANY point in their path
+            const locationInPath = team.path.find(step => step.location === location);
             
-            if (currentClue && currentClue.location === location) {
+            if (locationInPath) {
                 return {
                     success: true,
                     teamName: teamName,
-                    clueUrl: currentClue.clueUrl
+                    clueUrl: locationInPath.clueUrl
                 };
             }
         }
